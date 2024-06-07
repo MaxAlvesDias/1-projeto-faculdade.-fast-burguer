@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: black;
+}
+header {
+  width: 100%;
+  /*position: absolute;
+top: 0;
+left: 0;
+z-index: 1;*/
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent);
+}
+
+nav {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  border-width: 2px;
+  border-style: solid;
+  border-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+  padding: 20px;
+  gap: 20px;
+}
+
+nav:hover {
+  color: white;
+}
+
+nav > a {
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition-duration: 0.5s;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  margin-right: -2px;
+  text-transform: uppercase;
+}
+
+.nav-item {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+nav > a:hover {
+  color: rgb(118, 108, 108);
+}
+.nossa-historia {
+  display: inline-flex;
+}
+.historia-imagem {
+  margin: 60px;
+}
+.historia-texto {
+  width: 50vw;
+  margin: auto;
+}
+h2 {
+  text-align: center;
+  color: #fff;
+}
+p {
+  text-align: center;
+  color: #fff;
+}
+.sobre-nos {
+  border-left: 50px;
+
+  margin-top: 30px;
+}
+
+/*cadastro css*/
+h1 {
+  margin: 60px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 3px;
+  background-color: rgba(4, 25, 29, 0.731);
+  font-family: "Righteous";
+  color: white;
+}
+form {
+  font-family: sans-serif;
+  color: white;
+  font-size: 20px;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: auto 10px;
+}
+
+button {
+  width: 350 px;
+  text-align: center;
+  font-size: large;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 15px 20px;
+  color: rgb(0, 0, 0);
+  border-radius: 6px;
+  background-color: rgb(240, 205, 0);
+}
+
+fieldset {
+  padding: 10px 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.468);
+}
+legend {
+  background-color: rgba(4, 25, 29, 0.731);
+  border-radius: 5px;
+  padding: 10px;
+}
+a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+article {
+  background: black url("./imagens site/banner7.jpg") center center no-repeat
+    fixed;
+  background-size: cover;
+}
+
+input:focus {
+  background-color: rgb(240, 205, 0);
+}
+.comprar {
+  color: black;
+}

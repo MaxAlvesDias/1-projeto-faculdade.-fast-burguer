@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.max-width{
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+}
+
+.scroll-up-btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #e4f221;
+    color: #ffffff;
+    font-size: 24px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+  }
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body{
+    background-color: black;
+}
+
+.imagemheader {
+    width: 100%;
+    height: 100vh;
+    background: center no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    }
+   
+
+header {
+width: 100%;
+position: absolute;
+top: 0;
+left: 0;
+z-index: 1;
+background-image: linear-gradient(to bottom, rgba(0, 0, 0, .5), transparent);
+}
+
+nav {
+text-align: center;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+border-width: 2px;
+border-style: solid;
+border-color: white;
+margin: 10px;
+padding: 20px;
+width: 100%;
+}
+
+nav:hover {
+color: white;
+}
+
+nav > a {
+color: white;
+text-decoration: none;
+padding: 20px;
+font-weight: bold;
+border-radius: 5px;
+transition-duration: 0.5s;
+font-size: 1rem;
+letter-spacing: 2px;
+margin-right: -2px;
+text-transform: uppercase;
+}
+
+.nav-item {
+border-bottom: 2px solid rgba(255, 255, 255, .3)
+}
+
+nav > a:hover {
+color: rgb(118, 108, 108);
+}
+
+.nossa-historia{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    align-items: center;
+    padding: 80px;
+    justify-content: space-between;
+    width: 100%;
+}
+.historia-imagem{
+    width: 45%;
+}
+.historia-texto{
+    width: 30%;
+    margin: auto;
+}
+.historia{
+    background: white;
+    align-items: center;
+    display: flow-root;
+    color: black;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 8px 16px;
+    margin-top: 20px;
+    transition: all 0.3s ease; 
+}
+
+
+h2 {
+text-align: center;
+color: black;
+font-family:sans-serif;
+font-size: 22px;
+}
+p {
+text-align: center;
+color: black;
+font-family: sans-serif;
+font-size: 22px;
+}
+
+.serviços{
+color:white;
+background-color: black;
+display: inline-block;
+flex-wrap: wrap;
+align-items: center;
+justify-content: space-between;
+padding: 100px;
+width: 100%;
+}
+
+.serviços .titulo{
+    color: white;
+    text-align: center;
+    position: relative;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    font-family: 'ubuntu', sans-serif;
+    max-width: 100%;
+    margin: auto;
+}
+.serviço-nav{
+    display: flex;
+    align-items: stretch;
+    box-sizing: border-box;
+}
+.serviços .subtitulo{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    position: relative;
+    text-align: center;
+}
+.serviços .serviço-nav .cartão{
+    margin: 5px;
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.serviços .serviço-nav .cartão .caixa .p{
+    color: white;
+}
+.serviços .serviço-nav .cartão:hover{
+    background: gray;
+    align-items: center;
+}
+.serviços .serviço-nav .cartão .caixa{
+    transition: all 0.3s ease;
+}
+.serviços .serviço-nav .cartão:hover .caixa{
+    transition: scale(1.05);
+}
+.serviços .serviço-nav .cartão i{
+    font-size: 50px;
+    color: rgb(242, 205, 0);
+    transition: color 0.3s ease;
+}
+.serviços .serviço-nav .cartão:hover i{
+    color: rgb(242, 205, 0);
+}
+.serviços .serviço-nav .cartão .text1{
+    color: #fff;
+    font-size: 23px;
+}
+.serviços .serviço-nav .cartão .text2{
+    color: #fff;
+    font-size: 15px;
+}
+.horario{
+    background-color: white;
+    padding: 40px;
+}
+.horario .title {
+    color: rgb(14, 1, 1);
+    text-align: center;
+    position: relative;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    font-family: 'ubuntu', sans-serif;
+    max-width: 100%;
+    margin: auto
+}
+
+.horarios-funcionamento{
+    display: inline-flex;
+    flex-wrap: wrap;
+    background-color: white;
+    align-items: center;
+    padding: 100px;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+}
+
+.coluna-esquerda{
+    text-align: center;
+    width: 40%;
+    margin: auto;
+    font-size: 22px;
+    align-items: center;
+}
+
+.coluna-direita{
+    width: 40%;
+    margin: auto;
+}
+
+.horario .text{
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-family: sans-serif;
+}
+
+.coluna-esquerda .botao{
+    display: inline-flex;
+    background: rgb(242, 205, 0);
+    color: black;
+    font-size: 18px;
+    padding: 20px;
+    font-weight: 700;
+    border-radius: 6px;
+    border: 2px solid rgb(242, 205, 0);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    align-items: center;
+}
+
+.coluna-esquerda .botao:hover{
+    background-color: white;
+    border: 2 0x solid black;
+    color: rgba(242, 205, 0);
+}
+
+footer{
+    color: rgb(14, 13, 13);
+    background-color: aliceblue;
+    display: grid;
+    color: white;
+    font-size: 20px;
+    
+}
+.footer-box{  
+    margin: 2px;  
+    background: #2222228e;
+    text-align: center;
+    border-radius: 6px;
+    padding: 15px 55px;
+    
+
+}

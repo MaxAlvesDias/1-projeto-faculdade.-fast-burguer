@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>Fast burguer</title>
+    <script src="../js/cadastro.js"></script>
+
+    <!-- Incluindo design CSS-->
+
+    <link rel="stylesheet" href="../css/style cadastro.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">home</a>
+        <a href="cardapio.html">Cardapio</a>
+        <a href="cadastro.html">Cadastro</a>
+        <a href="#fale-conosco">Fale Conosco</a>
+      </nav>
+    </header>
+
+    <article>
+      <br />
+      <h1>CADASTRE-SE ABAIXO</h1>
+      <section>
+        <form
+          method="dialog"
+          id="fContato"
+          action="https://wa.me/5562984563612?"
+        >
+          <fieldset id="usuario">
+            <legend>Identifição do Usuário:</legend>
+            <br />
+            <p>
+              <label for="cNome">Nome:</label>
+              <input
+                type="text"
+                name="tNome"
+                id="cNome"
+                size="20"
+                maxlength="30"
+                placeholder="Nome Completo"
+              />
+            </p>
+            <p>
+              Senha:
+              <input
+                type="password"
+                name="tSenha"
+                id="cSenha"
+                size="20"
+                maxlength="8"
+                placeholder="Senha de 8 digítos"
+              />
+            </p>
+            <p>
+              <label for="cEmail">Email:</label>
+              <input
+                type="email"
+                name="tEmail"
+                id="cEmail"
+                size="20"
+                maxlenght="30"
+                placeholder="fastBurguer@email.com"
+              />
+            </p>
+            <!--<fieldset id="sexo"> <legend>Sexo</legend>
+                              <br>
+                              <input type="radio" name="tSexo" id="cMasc"/> <label for="cMasc">Masculino</label>
+                              <input type="radio" name="tSexo" id="cFem"> <label for="cFem">Feminino</label>
+                              <br>
+                          </fieldset>!-->
+            <p>
+              Data de Nascimento:
+              <input type="date" name="tNasc" id="cNasc" />
+            </p>
+            <br />
+          </fieldset>
+
+          <br />
+          <fieldset id="localizacao">
+            <legend>Endereço</legend>
+            <br />
+            <p>
+              <label for="cRua">Rua: </label>
+              <input
+                type="text"
+                name="tRua"
+                id="cRua"
+                size="30"
+                maxlenght="35"
+                placeholder="Escreva o nome/número da sua Rua"
+              />
+            </p>
+            <p>
+              <label for="cBai">Bairro: </label>
+              <input
+                type="text"
+                name="tBai"
+                id="cBai"
+                size="30"
+                maxlenght="35"
+                placeholder="Escreva o nome do seu Bairro"
+              />
+            </p>
+            <p>
+              <label for="cQua">Quadra: </label>
+              <input
+                type="text"
+                name="tQua"
+                id="cQua"
+                size="30"
+                maxlenght="35"
+                placeholder="Escreva o nome/número da sua Quadra"
+              />
+            </p>
+            <p>
+              <label for="cLot">Lote: </label>
+              <input
+                type="text"
+                name="tLot"
+                id="cLot"
+                size="30"
+                maxlenght="35"
+                placeholder="Escreva o nome/número do seu Lote"
+              />
+            </p>
+            <p>
+              <label for="cCid">Cidade: </label>
+              <input
+                type="text"
+                name="tCid"
+                id="cCid"
+                size="30"
+                maxlenght="35"
+                placeholder="Escreva o nome da sua Cidade"
+              />
+            </p>
+            <p>
+              <label for="cEst">Estado: </label>
+              <input
+                type="text"
+                name="tEst"
+                id="cEst"
+                size="30"
+                maxlenght="35"
+                placeholder="Escreva o nome do seu Estado"
+              />
+            </p>
+
+            <br />
+          </fieldset>
+          <br />
+
+          <fieldset>
+            <legend>Salvar Dados</legend>
+            <button onclick="salvarDados()">Salvar</button>
+          </fieldset>
+
+
+          <!-- <fieldset id="pedido">
+            <legend>Lanche escolhido:</legend>
+            <br />
+            <h1>Carrinho de Compras</h1>
+            <div class="itens-carrinho">
+              <div class="hamburgueres"></div>
+              <div class="bebidas"></div>
+              <div class="adicionais"></div>
+              <div class="combos"></div>
+              <button class="comprar"><a href="./pagamento.html">PAGAR</a></button>
+            </div>
+          </fieldset> -->
+
+          <br />
+
+          <fieldset id="mensagem">
+            <legend>Mensagem para o nosso WhatsApp</legend>
+            <br />
+            <label for="cBot">
+              <button>
+                <a
+                  href="https://wa.me/5562984563612?text=Eu quero HAMBÚRGUERES, me dê o cardápio por favor:"
+                  >PEÇA JÁ O SEU PELO WHATSAPP</a
+                >
+              </button></label
+            >
+            <br />
+          </fieldset>
+          <br />
+        </form>
+        <br />
+      </section>
+    </article>
+  </body>
+</html>

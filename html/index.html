@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <script src="https://kit.fontawesome.com/a561eaf61b.js" crossorigin="anonymous"></script>
+    <title>Fast burger</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+      .main {
+      width: 100%;
+      height: 100vh;
+      background: url("../banners/banner.jpg") center no-repeat;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      }
+    </style> 
+  </head>
+  <body>
+
+  <header>
+    <div>
+      <nav class = "barnavegação">
+        <a href="#nossa-historia">Nossa História</a>
+        <a href="cardapio.html">Cardápio</a>
+        <a href="#serviços">Serviços</a>
+        <a href="./cadastro.html">Seu Pedido</a>
+        <a href="#horario">Horários</a>
+        <a href="#faleconosco">Fale Conosco</a>
+      </nav>    
+    </div>
+    
+  </header>
+    <div class="main">
+  
+    </div>
+    <div class="scroll-up-btn" onclick="scrollToTop()">
+      <i class="fa-sharp fa-solid fa-arrow-up" style="color: black"></i>
+  </div>
+
+  <section class="historia">
+    <div class="nossa-historia" id="nossa-historia">
+      <div class="max-width">
+        <div class="historia-imagem">
+          <img src="../imagens site/nossahistoria.jpg" alt="" width=100%>
+        </div>
+        <div class="historia-texto">
+            <h2>Nossa História</h2><br>
+            <p>
+              O Fast Burger começou quando três amigos na faculdade se juntaram para iniciar um empreendimento juntos, dando início assim ao Fast Burger.
+            </p>  
+        </div> 
+      </div>  
+    </div>
+  </section>
+
+  <section class="services">
+    <div class="max-width">
+      <div class ="serviços" id="serviços">
+          <h2 class="titulo">Nossos serviços</h2>
+          <h4 class="subtitulo">Nós também fazemos delivery e é somente três passos</h4>
+      <div class="serviço-nav">
+      
+      <div class="cartão">
+        <div class="caixa">
+            <i class="fa-brands fa-whatsapp" style="color: rgb(242, 205, 0);"></i>
+        <div class="text1">Faça seu pedido</div>
+            <p class="text2">Vá até o nosso cardapio faça suas escolhas e nos envie a mensagem por whatsapp. <br>Estamos esperando</p>
+        </div>
+      </div>
+
+      <div class="cartão">
+        <div class="caixa">
+          <i class="fas fa-truck"></i>
+        <div class="text1">Nós entregamos</div>
+          <p class="text2">Agora é só esperar a entrega chegar e experimentar os nossos sabores, garantimos a entrega rápida de 40 minutos.</p>
+        </div>
+      </div>
+
+      <div class="cartão">
+        <div class="caixa">
+          <i class="fa-sharp fa-solid fa-burger" style="color: rgb(242, 205, 0);"></i>
+          <div class="text1">Aproveite seu lanche</div>
+          <p class="text2">Agora você pode experimentar seu lanche no conforto da sua casa. <br>Bon appétit!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="video">
+    <div class="max-width">
+      <iframe width=100% height="600" src="https://www.youtube.com/embed/DhGoIb5oS-M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+  </section>
+    
+  <section class="horario" id="horario">
+    <h2 class="title">Horários</h2><br>
+    <div class="max-width">    
+       <div class="horarios-funcionamento">
+          <div class="coluna-esquerda">
+            <div class="text">
+              Horários de Atendimento.
+            </div><br>
+            <div>
+              <p calss="paragrafo">Nós da Fast Burger atendemos durante a noite, somos uma ótima opção para quem quer um delicioso lanche durante a noite.<br>Você pode optar pela nossa loja física ou pelo delivery, garantimos uma entrega rápida entre 40 à 50 minutos.<br>Nossos horários durante a semana são das 18:30 às 22:30. Já nos finais de semana são das 18:30 às 23:30</p><br>
+              <a class ='botao' href="cardapio.html">Ver Cardápio</a>
+            </div> 
+          </div>
+          <div class="coluna-direita">
+              <img src="../imagens site/HorarioDeAtendimento1.png" alt="">
+          </div>
+       </div>
+    </div>
+  </section>
+
+    <footer>
+      <div class="footer">
+        <div class="footer-box">
+          <div class="faleconosco" id="faleconosco">
+            Fale Conosco
+          </div>
+            <ul style="list-style: none;">
+              <li>Telefone: (62) 3213-4567</li>
+              <li>contato@fastburger.com.br</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="footer-box">
+          <div>
+          <span class="endereco-text">
+            Avenida Antônio da Silva, 01, Jardim Brasil, Goiânia | contato@fastburger.com.br
+          </span>
+          <span class="endereco-text">Fast Buger 2023 - Todos os Direitos Reservados</span>
+        </div>
+       </div>
+        
+      </div>
+      <script>
+        window.addEventListener('scroll', function() {
+          var scrollBtn = document.querySelector('.scroll-up-btn');
+          if (window.pageYOffset > 100) {
+            scrollBtn.style.display = 'block';
+          } else {
+            scrollBtn.style.display = 'none';
+          }   
+        });
+
+        function scrollToTop() {
+          window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      }
+      </script>
+    </footer>
+  </body>
+</html>
